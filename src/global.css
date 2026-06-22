@@ -1,5 +1,6 @@
 :root {
     --accent: #437FC8;
+    --transition: all 0.15s ease-in-out;
 }
 
 @font-face {
@@ -65,4 +66,18 @@ html, body {
 
 .items-center {
     align-items: center;
+}
+
+.button--lg {
+    padding: 13px 22px;
+}
+
+.button--white {
+    background-color: white;
+    color: var(--accent);
+    border-radius: 50%;
+}
+
+.button--not-stock {
+    background-color: #999999;
 }

@@ -1,5 +1,10 @@
 <script setup>
 
+import Navbar from './Navbar/Navbar.vue';
+import Logo from "@/components/Logo/Logo.vue";
+import Button from "@/components/Button/Button.vue";
+import Search from "@/layouts/Header/Search/Search.vue";
+
 </script>
 
 <template>
@@ -25,7 +30,12 @@
         </div>
       </div>
 
-      <div class="header__bottom"></div>
+      <div class="header__bottom flex items-center">
+        <Logo />
+        <Button text="Все категории" classnames="button--lg"/>
+        <Navbar />
+        <Search />
+      </div>
     </div>
   </header>
 </template>
