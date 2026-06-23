@@ -70,17 +70,7 @@ body,
   чтобы избежать взаимодействие с более сложным селектором
  */
 p {
-    --paragraphMarginBottom: 24px;
-
     margin-block: 0;
-}
-
-/**
-  Внешний отступ вниз для параграфа без атрибута class,
-  который расположен не последним среди своих соседних элементов
- */
-p:where(:not([class]):not(:last-child)) {
-    margin-bottom: var(--paragraphMarginBottom);
 }
 
 
@@ -153,6 +143,10 @@ label {
  */
 button {
     -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    font-weight: 600;
 }
 
 /**

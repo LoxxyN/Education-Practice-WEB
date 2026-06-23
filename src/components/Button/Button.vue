@@ -3,7 +3,7 @@ const props = defineProps(['text', 'isStock', 'classnames'])
 </script>
 
 <template>
-  <button :class="classnames" class="button {{props.classnames}} {{props.isStock === false ? 'button--not-stock' : ''}}">{{ props.text }}</button>
+  <button :class="classnames" class="button {{props.isStock === false ? 'button--not-stock' : ''}}">{{ props.text }}</button>
 </template>
 
 <style>

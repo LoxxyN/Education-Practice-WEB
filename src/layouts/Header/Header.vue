@@ -1,10 +1,9 @@
 <script setup>
-
 import Navbar from './Navbar/Navbar.vue';
 import Logo from "@/components/Logo/Logo.vue";
-import Button from "@/components/Button/Button.vue";
+import ButtonLg from "@/components/Button/ButtonLg.vue";
 import Search from "@/layouts/Header/Search/Search.vue";
-
+import Cart from "@/layouts/Header/Cart/Cart.vue";
 </script>
 
 <template>
@@ -30,11 +29,12 @@ import Search from "@/layouts/Header/Search/Search.vue";
         </div>
       </div>
 
-      <div class="header__bottom flex items-center">
+      <div class="header__bottom flex items-center justify-between">
         <Logo />
-        <Button text="Все категории" classnames="button--lg"/>
+        <ButtonLg text="Все категории" />
         <Navbar />
         <Search />
+        <Cart />
       </div>
     </div>
   </header>
