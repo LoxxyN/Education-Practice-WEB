@@ -43,6 +43,10 @@ body,
     margin-block: 0;
 }
 
+h2 {
+    margin-block: 0;
+}
+
 :where(dd[class]) {
     margin-left: 0;
 }

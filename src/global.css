@@ -93,3 +93,7 @@ html, body {
 .button--not-stock {
     background-color: #999999;
 }
+
+.section__title {
+    font-size: 30px;
+}
