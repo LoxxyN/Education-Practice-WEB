@@ -1,6 +1,5 @@
 <script setup>
-
-import CatalogCategories from "@/layouts/CatalogCategories/CatalogCategories.vue";
+import CatalogCategories from "@layouts/CatalogCategories/CatalogCategories.vue";
 </script>
 
 <template>
@@ -8,7 +7,3 @@ import CatalogCategories from "@/layouts/CatalogCategories/CatalogCategories.vue
     <CatalogCategories />
   </div>
 </template>
-
-<style scoped>
-
-</style>

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="catalog-categories__ads-background flex justify-between">
+  <div class="popular-products__ads-background flex justify-between">
     <div>
       <h2>AirPods Pro</h2>
       <p>Успей приобрести всего за <span>2590₽</span></p>
@@ -13,7 +13,7 @@
 </template>
 
 <style scoped>
-  .catalog-categories__ads-background {
+  .popular-products__ads-background {
     border-radius: 5px;
     background-color: #142840;
     color: white;

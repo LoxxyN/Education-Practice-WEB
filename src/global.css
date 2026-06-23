@@ -26,6 +26,14 @@ html, body {
     font-family: 'Montserrat', sans-serif, system-ui;
 }
 
+hr {
+    border: 1px solid #E5E5E5;
+}
+
+.section {
+    padding-block: 80px;
+}
+
 .wrapper {
     width: 1407px;
     margin: 0 auto;
