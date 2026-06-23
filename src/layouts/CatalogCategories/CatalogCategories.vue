@@ -101,7 +101,6 @@ const DATA = ref([
     <h2 class="section__title">Каталог</h2>
     <hr>
     <CatalogCategoriesGrid :categoriesData="DATA" />
-    <AboutTech />
   </section>
 </template>
 
