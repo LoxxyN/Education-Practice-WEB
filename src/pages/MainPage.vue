@@ -6,8 +6,8 @@ import { PopularProducts } from "@layouts/PopularProducts/index";
 
 <template>
   <div class="wrapper">
+    <PopularProducts />
     <CatalogCategories />
     <AboutTech />
-    <PopularProducts />
   </div>
 </template>

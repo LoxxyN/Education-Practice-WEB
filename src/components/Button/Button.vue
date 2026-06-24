@@ -1,9 +1,9 @@
 <script setup>
-const props = defineProps(['text', 'isStock', 'classnames'])
+const props = defineProps(['text', 'classnames'])
 </script>
 
 <template>
-  <button :class="classnames" class="button {{props.isStock === false ? 'button--not-stock' : ''}}">{{ props.text }}</button>
+  <button :class="classnames" class="button">{{ props.text }}</button>
 </template>
 
 <style>
@@ -15,5 +15,10 @@ const props = defineProps(['text', 'isStock', 'classnames'])
     border: none;
     background-color: var(--accent);
     color: white;
+    padding: 8px 16px;
+  }
+
+  .button--not-stock {
+    background-color: #999999;
   }
 </style>

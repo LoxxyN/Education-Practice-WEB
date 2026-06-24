@@ -1,6 +1,7 @@
 :root {
     --accent: #437FC8;
     --transition: all 0.15s ease-in-out;
+    --text-second: #6e6e6e;
 }
 
 @font-face {
@@ -92,14 +93,14 @@ hr {
     gap: 12px;
 }
 
+.text-color--second {
+    color: var(--text-second);
+}
+
 .button--white {
     background-color: white;
     color: var(--accent);
     border-radius: 50%;
-}
-
-.button--not-stock {
-    background-color: #999999;
 }
 
 .section__title {
