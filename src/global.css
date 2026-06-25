@@ -100,7 +100,7 @@ hr {
 .button--white {
     background-color: white;
     color: var(--accent);
-    border-radius: 50%;
+    border-radius: 30px;
 }
 
 .section__title {

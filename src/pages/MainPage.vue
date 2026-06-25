@@ -2,10 +2,12 @@
 import { CatalogCategories } from "@layouts/CatalogCategories/index";
 import { AboutTech } from "@layouts/AboutTech/index";
 import { PopularProducts } from "@layouts/PopularProducts/index";
+import { SliderSection } from "@layouts/SliderSection/index";
 </script>
 
 <template>
   <div class="wrapper">
+    <SliderSection />
     <PopularProducts />
     <CatalogCategories />
     <AboutTech />
