@@ -1,9 +1,21 @@
 <script setup>
+import { ref } from 'vue'
 import Navbar from './Navbar/Navbar.vue';
 import Logo from "@/components/Logo/Logo.vue";
 import ButtonLg from "@/components/Button/ButtonLg.vue";
 import Search from "@/layouts/Header/Search/Search.vue";
 import Cart from "@/layouts/Header/Cart/Cart.vue";
+import Dropdown from "./Dropdown/Dropdown.vue";
+
+const isCabinetMenuOpen = ref(true)
+
+const toggleCabinetMenu = () => {
+  isCabinetMenuOpen.value = !isCabinetMenuOpen.value
+}
+
+const closeCabinetMenu = () => {
+  isCabinetMenuOpen.value = false
+}
 </script>
 
 <template>
@@ -22,9 +34,11 @@ import Cart from "@/layouts/Header/Cart/Cart.vue";
             </div>
             <span>+7(495)150-95-55</span>
           </div>
-          <div class="header__top-cabinet">
+          <div class="header__top-cabinet" @click="toggleCabinetMenu">
             <div class="flex flex-center"><img src="/icons/cabinet-icon.svg" alt="cabinet"></div>
             <span>Личный кабинет</span>
+
+            <Dropdown v-if="isCabinetMenuOpen" @close="closeCabinetMenu" />
           </div>
         </div>
       </div>
@@ -41,41 +55,44 @@ import Cart from "@/layouts/Header/Cart/Cart.vue";
 </template>
 
 <style scoped>
-  .header__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-  .header__top {
-    padding-block: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.header__top {
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .header__top-location {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
+.header__top-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
-  .header__top-contact-us {
-    display: flex;
-    gap: 14px;
-  }
+.header__top-contact-us {
+  display: flex;
+  gap: 14px;
+}
 
-  .header__top-contact-us__icons {
-    display: flex;
-    gap: 12px;
-  }
+.header__top-contact-us__icons {
+  display: flex;
+  gap: 12px;
+}
 
-  .header__top-cabinet {
-    display: flex;
-    gap: 8px;
-  }
+.header__top-cabinet {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.2s;
+}
 
-  .header__top-info-wrapper {
-    display: flex;
-    gap: 65px;
-  }
+.header__top-info-wrapper {
+  display: flex;
+  gap: 65px;
+}
 </style>
