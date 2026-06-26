@@ -7,7 +7,7 @@ import Search from "@/layouts/Header/Search/Search.vue";
 import Cart from "@/layouts/Header/Cart/Cart.vue";
 import Dropdown from "./Dropdown/Dropdown.vue";
 
-const isCabinetMenuOpen = ref(true)
+const isCabinetMenuOpen = ref(false)
 
 const toggleCabinetMenu = () => {
   isCabinetMenuOpen.value = !isCabinetMenuOpen.value

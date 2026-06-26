@@ -93,6 +93,10 @@ hr {
     gap: 12px;
 }
 
+.gap-16 {
+    gap: 16px;
+}
+
 .text-color--second {
     color: var(--text-second);
 }

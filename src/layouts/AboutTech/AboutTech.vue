@@ -1,5 +1,7 @@
 <script setup>
-const ICONS_DATA = [
+import {ref} from "vue";
+
+const ICONS_DATA = ref([
   {
     id: 1,
     title: '8 лет опыта',
@@ -25,7 +27,7 @@ const ICONS_DATA = [
     title: 'Гарантия на все',
     iconSrc: '/icons/about-section/medal.svg'
   }
-]
+])
 </script>
 
 <template>

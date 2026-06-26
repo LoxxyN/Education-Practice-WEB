@@ -5,11 +5,11 @@ const emit = defineEmits(['close'])
 const dropdownRef = ref(null)
 
 const menuItems = ref([
-  { label: 'Личный кабинет' },
-  { label: 'Настройки'},
-  { label: 'Сообщения',  badge: 2 },
-  { label: 'Избранное' },
-  { label: 'Мои заказы' }
+  { label: 'Личный кабинет', link: '/profile' },
+  { label: 'Настройки', link: '/settings'},
+  { label: 'Сообщения',  badge: 2, link: '/messages' },
+  { label: 'Избранное', link: '/favorite' },
+  { label: 'Мои заказы', link: '/orders' }
 ])
 
 const closeMenu = () => {
@@ -45,7 +45,7 @@ onUnmounted(() => {
           @click.stop="closeMenu"
       >
         <div class="cabinet-dropdown__item-content">
-          <span>{{ item.label }}</span>
+          <router-link :to="item.link">{{ item.label }}</router-link>
         </div>
         <span v-if="item.badge" class="cabinet-dropdown__badge">{{ item.badge }}</span>
       </li>
@@ -106,11 +106,14 @@ onUnmounted(() => {
   display: flex;
   align-items: center;
   gap: 12px;
-}
+  > * {
 
-.cabinet-dropdown__item-icon {
-  width: 20px;
-  height: 20px;
+  text-decoration: none;
+  color: black;
+    &:checked {
+      color: black;
+    }
+  }
 }
 
 .cabinet-dropdown__badge {

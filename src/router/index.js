@@ -5,6 +5,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'MainPage', component: MainPage },
+    { path: '/profile', name: 'UserProfilePage', component: () => import('../pages/UserProfilePage.vue') },
   ],
 })
 
