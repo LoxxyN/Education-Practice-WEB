@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import ButtonLg from "@/components/Button/ButtonLg.vue";
 
+const baseUrl = import.meta.env.BASE_URL``
 const ICONS_DATA = ref([
   {
     id: 1,
@@ -40,7 +41,7 @@ const ICONS_DATA = ref([
   <section class="user-profile-section">
     <div class="about-tech__icons-list flex justify-between">
       <div class="about-tech__icons-list-item" v-for="icon in ICONS_DATA" :key="icon.id">
-        <img width="25" height="25" :src="icon.iconSrc" :alt="icon.title">
+        <img width="25" height="25" :src="`${baseUrl}${icon.iconSrc}`" :alt="icon.title">
         <p>{{icon.title}}</p>
       </div>
     </div>

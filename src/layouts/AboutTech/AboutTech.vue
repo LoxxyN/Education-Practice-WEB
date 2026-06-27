@@ -1,31 +1,32 @@
 <script setup>
 import {ref} from "vue";
 
+const baseUrl = import.meta.env.BASE_URL
 const ICONS_DATA = ref([
   {
     id: 1,
     title: '8 лет опыта',
-    iconSrc: '/icons/about-section/history.svg'
+    iconSrc: 'icons/about-section/history.svg'
   },
   {
     id: 2,
     title: 'Возврат и обмен',
-    iconSrc: '/icons/about-section/exchange.svg'
+    iconSrc: 'icons/about-section/exchange.svg'
   },
   {
     id: 3,
     title: 'Установка',
-    iconSrc: '/icons/about-section/settings.svg'
+    iconSrc: 'icons/about-section/settings.svg'
   },
   {
     id: 4,
     title: 'Высокое качество',
-    iconSrc: '/icons/about-section/feedback.svg'
+    iconSrc: 'icons/about-section/feedback.svg'
   },
   {
     id: 5,
     title: 'Гарантия на все',
-    iconSrc: '/icons/about-section/medal.svg'
+    iconSrc: 'icons/about-section/medal.svg'
   }
 ])
 </script>
@@ -46,7 +47,7 @@ const ICONS_DATA = ref([
     </p>
     <div class="about-tech__icons-list flex justify-between">
       <div class="about-tech__icons-list-item" v-for="icon in ICONS_DATA" :key="icon.id">
-        <img width="50" height="50" :src="icon.iconSrc" :alt="icon.title">
+        <img width="50" height="50" :src="`${baseUrl}${icon.iconSrc}`" :alt="icon.title">
         <p>{{icon.title}}</p>
       </div>
     </div>

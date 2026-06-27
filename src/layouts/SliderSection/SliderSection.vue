@@ -7,28 +7,28 @@ const slides = [
     title: 'Большой выбор стиральных машин',
     subtitle: 'Успей купить по суперцене',
     buttonText: 'Подробнее',
-    image: '/images/stiralki.png'
+    image: 'images/stiralki.png'
   },
   {
     id: 2,
     title: 'Большой выбор стиральных машин',
     subtitle: 'Успей купить по суперцене',
     buttonText: 'Подробнее',
-    image: '/images/stiralki.png'
+    image: 'images/stiralki.png'
   },
   {
     id: 3,
     title: 'Большой выбор стиральных машин',
     subtitle: 'Успей купить по суперцене',
     buttonText: 'Подробнее',
-    image: '/images/stiralki.png'
+    image: 'images/stiralki.png'
   },
   {
     id: 4,
     title: 'Большой выбор стиральных машин',
     subtitle: 'Успей купить по суперцене',
     buttonText: 'Подробнее',
-    image: '/images/stiralki.png'
+    image: 'images/stiralki.png'
   }
 ]
 </script>

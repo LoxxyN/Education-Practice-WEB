@@ -3,7 +3,7 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import ButtonLg from "@/components/Button/ButtonLg.vue";
 
 const props = defineProps(['slides', 'autoplay', 'autoplayDelay'])
-
+const baseUrl = import.meta.env.BASE_URL
 const currentSlide = ref(0)
 const autoplayInterval = ref(null)
 
@@ -70,7 +70,7 @@ onUnmounted(() => {
           <ButtonLg classnames="button--white" :text="slide.buttonText"/>
         </div>
         <div class="slide-image">
-          <img :src="slide.image" :alt="slide.title">
+          <img :src="`${baseUrl}${slide.image}`" :alt="slide.title">
         </div>
       </div>
     </div>
