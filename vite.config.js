@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/Education-Practice-WEB-/',
+  base: '/Education-Practice-WEB/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
