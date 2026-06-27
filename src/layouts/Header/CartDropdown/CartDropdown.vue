@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 const emit = defineEmits(['close'])
 const dropdownRef = ref(null)
-
+const baseUrl = import.meta.env.BASE_URL
 const CART_ITEMS = ref([
   {
     id: 1,
@@ -11,7 +11,7 @@ const CART_ITEMS = ref([
     code: '519868.0',
     price: 14300,
     oldPrice: 18000,
-    image: '/images/products/microwave.png',
+    image: 'images/products/microwave.png',
     quantity: 1
   },
   {
@@ -20,7 +20,7 @@ const CART_ITEMS = ref([
     code: '519868.0',
     price: 9500,
     oldPrice: 15000,
-    image: '/images/products/microwave.png',
+    image: 'images/products/microwave.png',
     quantity: 1
   }
 ])
@@ -57,7 +57,7 @@ const formatPrice = (price) => {
     <div class="cart-dropdown__header" v-for="item in CART_ITEMS">
       <div class="cart-dropdown__item-info">
         <img
-            :src="item.image"
+            :src="`${baseUrl}${item.image}`"
             alt="Товар"
             class="cart-dropdown__item-image"
         >
