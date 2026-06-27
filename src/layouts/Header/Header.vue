@@ -1,11 +1,13 @@
 <script setup>
 import { ref } from 'vue'
-import Navbar from './Navbar/Navbar.vue';
-import Logo from "@/components/Logo/Logo.vue";
-import ButtonLg from "@/components/Button/ButtonLg.vue";
-import Search from "@/layouts/Header/Search/Search.vue";
-import Cart from "@/layouts/Header/Cart/Cart.vue";
-import Dropdown from "./Dropdown/Dropdown.vue";
+import { HeaderCategories } from './HeaderCategories';
+import { Search } from "./Search";
+import { Cart } from "./Cart";
+import { Dropdown } from "./Dropdown";
+import { Navbar } from "./Navbar";
+
+import ButtonLg from "@components/Button/ButtonLg.vue";
+import Logo from "@components/Logo/Logo.vue";
 
 const isCabinetMenuOpen = ref(false)
 
@@ -46,10 +48,11 @@ const closeCabinetMenu = () => {
       <div class="header__bottom flex items-center justify-between">
         <Logo />
         <ButtonLg text="Все категории" />
-        <Navbar />
+        <HeaderCategories />
         <Search />
         <Cart />
       </div>
+      <Navbar />
     </div>
   </header>
 </template>
