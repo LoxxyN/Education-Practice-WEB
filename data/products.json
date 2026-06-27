@@ -1,0 +1,107 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Водонагреватель Electrolux EWH 80 Formax",
+      "price": 14300,
+      "old_price": 18000,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/boiler.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 2,
+      "productName": "Стиральная машина LG F-1096TD3",
+      "price": 14300,
+      "old_price": 18000,
+      "feedbackQty": 0,
+      "inStock": false,
+      "productImg": "/public/images/products/wash-machine.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 3,
+      "productName": "Микроволновая печь WHIRLPOOL AMW 730 IX",
+      "price": 20300,
+      "old_price": 18000,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/microwave.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 4,
+      "productName": "Телевизор BLACKTON 2402B",
+      "price": 6300,
+      "old_price": 18000,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/televizor.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 5,
+      "productName": "Микроволновая печь WHIRLPOOL AMW 730 IX",
+      "price": 20300,
+      "old_price": null,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/microwave.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" }
+      ]
+    },
+    {
+      "id": 6,
+      "productName": "Телевизор BLACKTON 2402B",
+      "price": 6300,
+      "old_price": 18000,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/televizor.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 7,
+      "productName": "Стиральная машина LG F-1096TD3",
+      "price": 14300,
+      "old_price": 18000,
+      "feedbackQty": 0,
+      "inStock": false,
+      "productImg": "/public/images/products/wash-machine.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    },
+    {
+      "id": 8,
+      "productName": "Водонагреватель Electrolux EWH 80 Formax",
+      "price": 14300,
+      "old_price": 18000,
+      "feedbackQty": 13,
+      "inStock": true,
+      "productImg": "/public/images/products/boiler.png",
+      "badgesArray": [
+        { "id": 1, "type": "new" },
+        { "id": 2, "type": "sale" }
+      ]
+    }
+  ]
+}
