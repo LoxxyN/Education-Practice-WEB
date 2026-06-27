@@ -7,7 +7,7 @@
       "old_price": 18000,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/boiler.png",
+      "productImg": "images/products/boiler.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -20,7 +20,7 @@
       "old_price": 18000,
       "feedbackQty": 0,
       "inStock": false,
-      "productImg": "/public/images/products/wash-machine.png",
+      "productImg": "images/products/wash-machine.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -33,7 +33,7 @@
       "old_price": 18000,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/microwave.png",
+      "productImg": "images/products/microwave.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -46,7 +46,7 @@
       "old_price": 18000,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/televizor.png",
+      "productImg": "images/products/televizor.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -59,7 +59,7 @@
       "old_price": null,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/microwave.png",
+      "productImg": "images/products/microwave.png",
       "badgesArray": [
         { "id": 1, "type": "new" }
       ]
@@ -71,7 +71,7 @@
       "old_price": 18000,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/televizor.png",
+      "productImg": "images/products/televizor.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -84,7 +84,7 @@
       "old_price": 18000,
       "feedbackQty": 0,
       "inStock": false,
-      "productImg": "/public/images/products/wash-machine.png",
+      "productImg": "images/products/wash-machine.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
@@ -97,7 +97,7 @@
       "old_price": 18000,
       "feedbackQty": 13,
       "inStock": true,
-      "productImg": "/public/images/products/boiler.png",
+      "productImg": "images/products/boiler.png",
       "badgesArray": [
         { "id": 1, "type": "new" },
         { "id": 2, "type": "sale" }
