@@ -7,7 +7,7 @@ let productData = ref([])
 
 onMounted(() => {
   async function getProductsData() {
-    const res = await fetch("public/data/products.json")
+    const res = await fetch("/data/products.json")
     const { products } = await res.json()
     productData.value = products
   }
