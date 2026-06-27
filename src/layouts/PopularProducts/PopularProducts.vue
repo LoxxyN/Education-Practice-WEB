@@ -8,7 +8,7 @@ const baseUrl = import.meta.env.BASE_URL
 
 onMounted(() => {
   async function getProductsData() {
-    const res = await fetch(`${baseUrl}/data/products.json`)
+    const res = await fetch(`${baseUrl}data/products.json`)
     const { products } = await res.json()
     productData.value = products
   }
