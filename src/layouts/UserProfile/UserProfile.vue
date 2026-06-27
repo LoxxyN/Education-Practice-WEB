@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import ButtonLg from "@/components/Button/ButtonLg.vue";
 
-const baseUrl = import.meta.env.BASE_URL``
+const baseUrl = import.meta.env.BASE_URL
 const ICONS_DATA = ref([
   {
     id: 1,
